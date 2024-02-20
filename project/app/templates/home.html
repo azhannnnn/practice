@@ -1,0 +1,20 @@
+<center>
+    <h1>Add Adhar Number</h1>
+    <form action="{% url 'add' %}" method="post">
+        {% csrf_token %}
+    
+        {{form}} <br>
+    
+        <input type="submit" value="Add"> <br><br>{{msg}}
+    </form>
+    
+    <br><br>
+    
+    <h1>Add User Details</h1>
+    <form action="{% url 'allot' %}" method="post">
+        {% csrf_token %}
+        {{form1}} <br>
+        <input type="submit" value="Allot"><br><br>{{msg1}}
+    </form>
+    <h1 style = color:red;>{{msg2}}</h1>
+</center>
